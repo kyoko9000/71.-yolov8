@@ -6,4 +6,4 @@ print(len(results))
 # for _ in results:
 #     print(results.boxes)
 #     cv2.imshow("show", frame)
-#     cv2.waitKey(1)  # 1 millisecond
+#     cv2.waitKey(1)  # 1 millisecond 111
