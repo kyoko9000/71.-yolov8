@@ -2,7 +2,7 @@ import cv2
 from ultralytics import YOLO
 
 model = YOLO("yolov8n.pt")  # load a pretrained model (recommended for training)
-results = model("0", show=True, stream=True)  # List of Results objects
+results = model("video.mp4", show=True, stream=True)  # List of Results objects
 
 
 # for result in results:
