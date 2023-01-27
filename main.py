@@ -5,13 +5,6 @@ model = YOLO("yolov8n.pt")  # load a pretrained model (recommended for training)
 results = model("video.mp4", show=True, stream=True)  # List of Results objects
 
 
-# for result in results:
-#     boxes = result.boxes.numpy()  # Boxes object for bbox outputs
-#     for box in boxes:  # there could be more than one detection
-#         print("class", box.cls)
-#         print("xyxy", box.xyxy[0])
-#         print("conf", box.conf)
-
 def show_frame():
     cv2.imshow("show", frame)
     cv2.waitKey(1)
