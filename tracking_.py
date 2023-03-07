@@ -9,7 +9,7 @@ results = model.track(source="video.mp4",
 
 
 def show_frame():
-    cv2.imshow("show", frame)
+    cv2.imshow("show me", frame)
     cv2.waitKey(1)
 
 
