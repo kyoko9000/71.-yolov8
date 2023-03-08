@@ -19,4 +19,4 @@ for result, frame in results:
     for box in boxes:  # there could be more than one detection
         print("class", box.cls)
         print("xyxy", box.xyxy)
-        print("conf", box.conf)
+        print("confidence", box.conf)
