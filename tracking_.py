@@ -2,11 +2,10 @@ import cv2
 from ultralytics import YOLO
 
 model = YOLO("yolov8n.pt")  # or a segmentation model .i.e yolov8n-seg.pt
-results = model.track(source="video1.mp4",
+results = model.track(source="video.mp4",
                       stream=True,
                       show=True,
-                      tracker="bytetrack.yaml",
-                      classes=[16])
+                      )  # tracker="bytetrack.yaml"
 
 
 def show_frame():
